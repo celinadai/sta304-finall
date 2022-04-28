@@ -16,9 +16,7 @@
 library(haven)
 library(tidyverse)
 # Read in the raw data. 
-getwd()
-<<<<<<< HEAD
-raw_data <- readr::read_csv("/home/jovyan/1STA304/STA304-FINAL/inputs/data/Robbery.csv")
+raw_data <- readr::read_csv("/home/jovyan/1STA304/sta304-finall/inputs/data/Robbery.csv")
 # Just keep some variables that may be of interest (change 
 # this depending on your interests)
 
@@ -146,19 +144,5 @@ clean_data
 
 #### Save Data ####
 
-write.csv(clean_data, "/home/jovyan/1STA304/STA304-FINAL/outputs/data/reduced_data.csv")
+write.csv(clean_data, "/home/jovyan/1STA304/sta304-finall/outputs/data/reduced_data.csv")
 
-=======
-raw_data <- readr::read_csv("/home/jovyan/STA304-final/inputs/data/Robbery.csv")
-# Just keep some variables that may be of interest (change 
-# this depending on your interests)
-clean_data <- raw_data%>%
-  filter(reportedyear == "2021",
-         reportedmonth == "December")%>%
-  select(location_type, offence, occurrencehour,occurrenceday, occurrencedayofweek, Neighbourhood)
-clean_data
-
-write.csv(clean_data, "/home/jovyan/STA304-final/outputs/data/reduced_data.csv")
-
-#### What's next? ####
->>>>>>> b210e7f46c654c6c98be60a7c7c6a77975ad9572

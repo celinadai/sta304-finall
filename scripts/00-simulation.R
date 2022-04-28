@@ -1,7 +1,7 @@
 #### Simulate Progress ####
-# The purpose of this is to simulate some data that can be use for DHS program
+# The purpose of this is to simulate some data that can be use for robbery cases
 
-#The sample size had been set at 10000, which include the variables named people, age, gender, education. The age is the age groups, and gender is female and male, education is the education level which includes no education, primary, middle, and secondary.
+#The sample size had been set at 10000
 
 
 library(tidyverse)
